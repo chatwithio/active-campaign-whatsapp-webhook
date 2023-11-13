@@ -27,13 +27,13 @@ class WebhookController extends AbstractController
 
         if(isset($all['contact']) && is_array($all['contact'])) {
             $contact = $all['contact'];
-            $id = $contact['id'];
-            $email = $contact['email'];
-            $first_name = $contact['first_name'];
-            $last_name = $contact['last_name'];
+//            $id = $contact['id'];
+//            $email = $contact['email'];
+//            $last_name = $contact['last_name'];
+//            $ip = $contact['ip'];
+//            $tags = $contact['tags'];
             $phone = $contact['phone'];
-            $ip = $contact['ip'];
-            $tags = $contact['tags'];
+            $first_name = $contact['first_name'];
             $placeholders = [$first_name];
             if ($phone){
                 $messageToSend = [];
